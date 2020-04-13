@@ -10,15 +10,19 @@
      Vertx v = Vertx.vertx();
         v.deployVerticle(new CustomerDatabaseConnection(),stringAsyncResult -> {
             v.deployVerticle(new ConnectToCustomer());
-        });
+  });
+  ##
   ```diff      
-  + ## Działa
+  +  Działa
   ```
-        
+   
         
  ### Moduł MusicApi i MusicDisplay: 
   MusicApi ma w sobie jedna klase do łaczenia sie z baza i mozna odplic ja samodzielnie, natomiast moduł MuiscDisplay służy do połaczenia porzez service discovery z MusicApi. 
-  ## Nie Działa
+  ##
+  ```diff      
+  -  Nie Działa
+  ```
   
   
   ## Docker for mow
