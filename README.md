@@ -4,8 +4,7 @@
   #### Tutaj znajdują sie aplikacje w vert.x
   CustomerApi oraz MuiscApi zrobiłem na dwa różne sposoby,
   
-  ### Moduł CustomerApi:
-    ma w sobie dwie klasy, jedna łaczy sie z baza danych klientów oraz tworzy server, a droga wyswietla poprzez service discovery te dane na ekranie i jest to uruchamiane poprzez taki kod
+  ### Moduł CustomerApi ma w sobie dwie klasy, jedna łaczy sie z baza danych klientów oraz tworzy server, a droga wyswietla poprzez service discovery te dane na ekranie i jest to uruchamiane poprzez taki kod
     
      Vertx v = Vertx.vertx();
         v.deployVerticle(new CustomerDatabaseConnection(),stringAsyncResult -> {
