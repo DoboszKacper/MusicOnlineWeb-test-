@@ -11,8 +11,9 @@
         v.deployVerticle(new CustomerDatabaseConnection(),stringAsyncResult -> {
             v.deployVerticle(new ConnectToCustomer());
         });
-        
-  ## Działa
+  ```diff      
+  + ## Działa
+  ```
         
         
  ### Moduł MusicApi i MusicDisplay: 
