@@ -1,7 +1,7 @@
-create table artists (artist_id INT PRIMARY KEY, name TEXT);
-insert into artists(artist_id,name) values (1,'Eminem');
-insert into artists(artist_id,name) values (2,'ACDC');
-insert into artists(artist_id,name) values (3,'Ed Sheeran');
-insert into artists(artist_id,name) values (4,'Shawn Mendes');
-insert into artists(artist_id,name) values (5,'The Weekend');
-insert into artists(artist_id,name) values (6,'Post Malone');
+create table artists (artist_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, name TEXT);
+insert into artists(name) values ('Eminem');
+insert into artists(name) values ('ACDC');
+insert into artists(name) values ('Ed Sheeran');
+insert into artists(name) values ('Shawn Mendes');
+insert into artists(name) values ('The Weekend');
+insert into artists(name) values ('Post Malone');
