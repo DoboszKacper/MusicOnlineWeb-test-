@@ -21,7 +21,7 @@
   MusicApi ma w sobie jedna klase do łaczenia sie z baza i mozna odplic ja samodzielnie, natomiast moduł MuiscDisplay służy do połaczenia porzez service discovery z MusicApi. 
   ##
   ```diff      
-  -  Nie Działa
+  +  Działa Note: Trzeba było dodać hazelcasta!
   ```
   
   
