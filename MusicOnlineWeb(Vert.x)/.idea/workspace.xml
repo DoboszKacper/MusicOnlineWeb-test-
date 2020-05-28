@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a623dba-7531-4543-b523-a53fbd84283b" name="Default Changelist" comment="" />
+    <list default="true" id="7a623dba-7531-4543-b523-a53fbd84283b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MusicDisplay/src/main/java/ConnectToMusicClustered.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MusicDisplay/target/classes/ConnectToMusicClustered.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicApi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MusicApi/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicApi/src/main/java/DatabaseConnection/MusicDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/MusicApi/src/main/java/DatabaseConnection/MusicDatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicApi/target/classes/DatabaseConnection/MusicDatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/MusicApi/target/classes/DatabaseConnection/MusicDatabaseConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicDisplay/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MusicDisplay/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicDisplay/src/main/java/ConnectToMusic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicDisplay/target/classes/ConnectToMusic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicDisplay/target/classes/META-INF/MusicDisplay.kotlin_module" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +26,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,15 +37,20 @@
     </option>
   </component>
   <component name="ProjectId" id="1aJdDnLhDU3mwo5BTdOgcpawPap" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -43,22 +63,23 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CustomerDatabaseConnection">
-    <configuration name="ConnectMusic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ConnectMusic" />
+  <component name="RunManager" selected="Application.ConnectToMusicClustered">
+    <configuration name="ConnectToMusic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ConnectToMusic" />
       <module name="MusicDisplay" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConnectToMusic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ConnectToMusic" />
+    <configuration name="ConnectToMusic2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ConnectToMusic2" />
+      <module name="MusicDisplay" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectToMusicClustered" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ConnectToMusicClustered" />
       <module name="MusicDisplay" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,13 +94,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="MusicOnlineWeb" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,16 +115,16 @@
       <item itemvalue="Application.CustomerDatabaseConnection" />
       <item itemvalue="Application.MusicDatabaseConnection" />
       <item itemvalue="Application.ConnectToMusic" />
-      <item itemvalue="Application.ConnectMusic" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.ConnectToMusic2" />
+      <item itemvalue="Application.ConnectToMusicClustered" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CustomerDatabaseConnection" />
-        <item itemvalue="Application.ConnectToMusic" />
+        <item itemvalue="Application.ConnectToMusicClustered" />
         <item itemvalue="Application.MusicDatabaseConnection" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ConnectMusic" />
+        <item itemvalue="Application.ConnectToMusic2" />
+        <item itemvalue="Application.ConnectToMusic" />
+        <item itemvalue="Application.CustomerDatabaseConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -129,11 +143,17 @@
       <workItem from="1586726195982" duration="2232000" />
       <workItem from="1586783550507" duration="1515000" />
       <workItem from="1586786157383" duration="2481000" />
+      <workItem from="1588690979405" duration="742000" />
+      <workItem from="1590410071814" duration="4174000" />
+      <workItem from="1590678971998" duration="368000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="960" y="317" key="#Project_Structure" timestamp="1586457811711">
@@ -148,30 +168,30 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1516" y="559" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.3440.1400/-1920.0.1920.1040@0.0.3440.1400" timestamp="1586787410739" />
-    <state width="3397" height="344" key="GridCell.Tab.0.bottom" timestamp="1586788826797">
+    <state width="1674" height="433" key="GridCell.Tab.0.bottom" timestamp="1590679339801">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="3397" height="344" key="GridCell.Tab.0.bottom/0.0.3440.1400/-1920.0.1920.1040@0.0.3440.1400" timestamp="1586788826797" />
-    <state width="3397" height="344" key="GridCell.Tab.0.center" timestamp="1586788826797">
+    <state width="1674" height="433" key="GridCell.Tab.0.bottom/0.0.3440.1400/-1920.0.1920.1040@0.0.3440.1400" timestamp="1590679339801" />
+    <state width="1674" height="433" key="GridCell.Tab.0.center" timestamp="1590679339801">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="3397" height="344" key="GridCell.Tab.0.center/0.0.3440.1400/-1920.0.1920.1040@0.0.3440.1400" timestamp="1586788826797" />
-    <state width="3397" height="344" key="GridCell.Tab.0.left" timestamp="1586788826797">
+    <state width="1674" height="433" key="GridCell.Tab.0.center/0.0.3440.1400/-1920.0.1920.1040@0.0.3440.1400" timestamp="1590679339801" />
+    <state width="1674" height="433" key="GridCell.Tab.0.left" timestamp="1590679339801">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="3397" height="344" key="GridCell.Tab.0.left/0.0.3440.1400/-1920.0.1920.1040@0.0.3440.1400" timestamp="1586788826797" />
-    <state width="3397" height="344" key="GridCell.Tab.0.right" timestamp="1586788826797">
+    <state width="1674" height="433" key="GridCell.Tab.0.left/0.0.3440.1400/-1920.0.1920.1040@0.0.3440.1400" timestamp="1590679339801" />
+    <state width="1674" height="433" key="GridCell.Tab.0.right" timestamp="1590679339801">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="3397" height="344" key="GridCell.Tab.0.right/0.0.3440.1400/-1920.0.1920.1040@0.0.3440.1400" timestamp="1586788826797" />
+    <state width="1674" height="433" key="GridCell.Tab.0.right/0.0.3440.1400/-1920.0.1920.1040@0.0.3440.1400" timestamp="1590679339801" />
     <state x="1250" y="355" key="Maven.ArtifactSearchDialog" timestamp="1586787462632">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1250" y="355" key="Maven.ArtifactSearchDialog/0.0.3440.1400/-1920.0.1920.1040@0.0.3440.1400" timestamp="1586787462632" />
-    <state x="1416" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1586783569628">
+    <state x="1416" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1590678972886">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1416" y="524" key="com.intellij.ide.util.TipDialog/0.0.3440.1400/-1920.0.1920.1040@0.0.3440.1400" timestamp="1586783569628" />
+    <state x="1416" y="524" key="com.intellij.ide.util.TipDialog/0.0.3440.1400/-1920.0.1920.1040@0.0.3440.1400" timestamp="1590678972886" />
     <state x="750" y="354" key="new project wizard" timestamp="1586785063798">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>

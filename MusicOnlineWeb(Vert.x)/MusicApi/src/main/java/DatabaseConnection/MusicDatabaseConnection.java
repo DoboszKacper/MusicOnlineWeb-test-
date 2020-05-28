@@ -4,10 +4,12 @@ import Models.Artist;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Future;
 import io.vertx.core.Vertx;
+import io.vertx.core.VertxOptions;
 import io.vertx.core.http.HttpServer;
 import io.vertx.core.http.HttpServerResponse;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
+import io.vertx.core.spi.cluster.ClusterManager;
 import io.vertx.ext.web.Route;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
@@ -19,6 +21,7 @@ import io.vertx.servicediscovery.ServiceDiscovery;
 import io.vertx.servicediscovery.ServiceDiscoveryOptions;
 import io.vertx.servicediscovery.types.HttpEndpoint;
 import io.vertx.servicediscovery.types.RedisDataSource;
+import io.vertx.spi.cluster.hazelcast.HazelcastClusterManager;
 import io.vertx.sqlclient.PoolOptions;
 import io.vertx.sqlclient.Row;
 import io.vertx.sqlclient.RowSet;
@@ -33,25 +36,31 @@ public class MusicDatabaseConnection extends AbstractVerticle {
     public Record musicRecord;
 
     public static void main(String[] args) {
-        Vertx v = Vertx.vertx();
-        v.deployVerticle(new MusicDatabaseConnection());
-    }
+        ClusterManager mgr = new HazelcastClusterManager();
+        VertxOptions options = new VertxOptions().setClusterManager(mgr);
+        Vertx.clusteredVertx(options, vertxAsyncResult -> {
+            if(vertxAsyncResult.succeeded()){
+                Vertx vertx = vertxAsyncResult.result();
+                vertx.deployVerticle(new MusicDatabaseConnection());
 
-    public MusicDatabaseConnection() {
+                //Connect to the database
+                connectOptions = new MySQLConnectOptions()
+                        .setPort(3308)
+                        .setHost("localhost")
+                        .setDatabase("artists")
+                        .setUser("root")
+                        .setPassword("123");
 
-        //Connect to the database
-        connectOptions = new MySQLConnectOptions()
-                .setPort(3308)
-                .setHost("localhost")
-                .setDatabase("artists")
-                .setUser("root")
-                .setPassword("123");
+                //Pool options
+                PoolOptions poolOptions = new PoolOptions();
 
-        //Pool options
-        PoolOptions poolOptions = new PoolOptions();
+                //Create the client pool
+                client = MySQLPool.pool(vertx,connectOptions,poolOptions);
 
-        //Create the client pool
-        client = MySQLPool.pool(connectOptions,poolOptions);
+            }else {
+                System.out.println("Cluster Failed");
+            }
+        });
     }
 
     @Override

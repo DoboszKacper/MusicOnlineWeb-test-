@@ -51,6 +51,32 @@
             <artifactId>vertx-service-discovery</artifactId>
             <version>3.8.5</version>
         </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-hazelcast</artifactId>
+            <version>3.8.5</version>
+        </dependency>
     </dependencies>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <configuration>
+                    <executable>java</executable>
+                    <arguments>
+                        <argument>-jar</argument>
+                        <argument>target/cluster-1.0-SNAPSHOT.jar</argument>
+                        <argument>-cluster</argument>
+                        <argument>-cluster-host</argument>
+                        <argument>127.0.0.1</argument>
+                        <argument>-Djava.net.preferIPv4Stack=true</argument>
+                        <argument>-Djgroups.tcp.address=127.0.0.1</argument>
+                        <argument>-Djgroups.mping.mcast_addr=239.5.5.5</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
